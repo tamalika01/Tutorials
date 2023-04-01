@@ -1,0 +1,14 @@
+1.What is git?
+Ans--Git is a distributed version control system that is widely used for software development and other version control tasks. 
+2.what is version control system?
+Ans--A version control system (VCS) is a software tool that manages changes to a set of files over time. It is commonly used in software development to keep track of changes to source code, but it can also be used for other types of files such as documents, images, and configuration files.
+3.What is github?
+Ans--GitHub is a web-based platform that serves as a hub for developers to collaborate on software development projects. It provides a platform for version control, code management, and project management. 
+4.what is git clone?
+Ans--git clone is a Git command used to create a copy of a remote repository on a local machine. This allows developers to have a local copy of the codebase to work on and make changes to, without affecting the original remote repository.
+5.what is git pull?
+Ans--git pull is a Git command used to update a local repository with changes from a remote repository. It combines two actions: fetching the latest changes from the remote repository and merging them into the local repository.
+6.what is git push?
+Ans--git push is a Git command used to upload local repository changes to a remote repository. It is used after a developer has made changes to their local repository and wants to make those changes available to other developers working on the same remote repository.
+7.what is git commit?
+Ans--git commit is a Git command used to save changes made to a local repository. It is used after a developer has made changes to their codebase and wants to create a new commit to save those changes.
