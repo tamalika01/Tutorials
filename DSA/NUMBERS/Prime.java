@@ -17,8 +17,5 @@ public class Prime {
         System.out.println("Enter a number n:");
         int s= sc.nextInt();
         System.out.println("Prime or not..return in true or false: "+isPrime(s));
-        
-
-
-    }
+        }
 }
