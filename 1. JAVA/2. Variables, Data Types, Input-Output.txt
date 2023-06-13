@@ -1,0 +1,15 @@
+####Output###
+   System.out.print("Hello World");
+   -- System is a class, print is a function
+   1. print 2.println 3. "/n" ex: System.out.print("Hello World /n");
+
+###Data Types###
+Java is a typed language.
+- Data types are of two types.
+   --- Primitive: int, byte, short, long, char, float, boolean, double
+   ---Non Primitive: String, Array, Class, Array, Interface
+
+###Input###
+Scanner sc = new Scanner(System.in);// taken input from user
+String name = sc.nextLine(); // store the input in name
+---nextLine, nextInt, nextDouble.....
