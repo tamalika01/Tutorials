@@ -1,5 +1,9 @@
 ####Output###
    System.out.print("Hello World");
+     This will print msg but not insert a new line
+   System.out.println("Hello World");
+     This will print msg and also insert a new line at end
+
    -- System is a class, print is a function
    1. print 2.println 3. "/n" ex: System.out.print("Hello World /n");
 
@@ -10,6 +14,11 @@ Java is a typed language.
    ---Non Primitive: String, Array, Class, Array, Interface
 
 ###Input###
-Scanner sc = new Scanner(System.in);// taken input from user
+--Java util.Scanner class provides method to take input
+
+Scanner sc = new Scanner(System.in);//create object of sc and  taken input from user 
 String name = sc.nextLine(); // store the input in name
 ---nextLine, nextInt, nextDouble.....
+
+-- At the end close the Scanner
+        scanner.close()
