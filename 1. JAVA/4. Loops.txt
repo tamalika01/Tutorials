@@ -1,0 +1,19 @@
+###Loops###
+--A loop is used for executing a block of statements repeatedly until a particular  condition is satisfied. 
+A loop consists of an initialization statement, a test condition and an increment statement.
+
+--for loops, while loops, do while loops
+1. for loops
+syntax:- for(intialization, condition, increment/decrement){
+        // do something
+         }
+
+2. While Loops
+syntax:- while(condition){
+         //do something
+         } 
+
+3.  do while
+syntax:-  do{
+    //do something
+    }while(condition);  
