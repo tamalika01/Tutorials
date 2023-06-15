@@ -1,9 +1,17 @@
-	#### Features of java ####
-	- High level, object oriented language.
-	- used in web, app development.
+    What is java?
+	-- Java is a high level general purpose programming language, used for developing web applications,
+	  android applications, and other business applications.
+
+  	#### Features of java ####
+	- High level-
+	       high level language are understandable by human being, low level language are understandable by computer. 
+	-object oriented language-
+	       provide the option to create class and all the oops features.
 	- plateform independent
+	       because we can write and compile java class in one platform and then can run in any platform...WORA
+	- automatic memory clean up by java garbage collector	   
 	- highly secured, does not use pointers
-	- automatic memory clean up by java garbage collector
+	- used in web, app development.
 
 #### How java code runs internally ####
 	- jdk ( java development kit ) 
@@ -15,184 +23,10 @@
 	- jre (java run enviornment ) 
 		It is an implementation of jvm. we need jre to run any java program as it provides run time enviornment for execution of 
 		program.
+		
 	- To run the java code:
 		a. Write the java program and save it with .java extension say Tmp.java
 		b. Compile it into bytecode, javac Tmp.java arg1 arg2 
 		c. After this step we have .class file which is bytecode fil and independent of os.
 		d. Run it on jvm, java FileName arg1 arg2 arg3
-
-##### Common Package and classes ###
-	- java.lang
-		System
-		Math
-		String
-		Thread
-		Exception
-	- java.util
-		Arrays
-		Scanner
-		Collection
-	- java.sql
-	- java.io
-
-	
-#### Primitive Types ####
-	- Provided by language, basic block for the language to construct other data types
-	- 8 types:
-		byte, short, int, long
-		float, double
-		boolean
-		char
-	- To convert from one type to another, use typecast operator
-		(type)type2;
-		
-#### Wrapper Object in java.lang package ####
-	- For each primitive type, java provides a wrapper clas which encapsulates a primtive type.
-	- It used for generic programming in java where only object can be used.
-	- All classes extend java.lang.Number class
-	- 8 types:
-		Byte, Short, Integer, Long
-		Float, Double
-		Boolean
-		Char
-	- AutoBoxing and AutoUnBoxing:
-		Primtive types can automatically be converted to respective wrapper classes. This is called as AutoBoxing.
-		Similiarly, Wrapper classes can also automatically be convert back to primitive type. This is auto unboxing.
-	- To create from a string:
-		int i = Integer.parseInt(String str);
-		Integer obj = Intger.valueOf(String str);
-	
-#### array ####
-	- type[] arr = new type[size] or {};
-	- arr.length
-	- Traverse- for loop and arr[i] or for each loop
-	- add - can not
-	- update - using index access
-	- delete - can not
-
-#### 2-d array ####
-	- type[][] arr = new type[x][y] or { {}, {} };
-	- type[][] arr = new type[x][] and assign a different size array to each element.
-	- traverse - using 2 loops
-	- pass to function - modify(t[][] arr)
-	- total ele - arr.length * arr[0].length
-
-#### java.util.Arrays static methods #####
-	- void sort(t[]) or sort(t[], comp)
-	- int binarySearch(arr, key) or binarySearch(arr, key, comp)
-	- t[] copyOf(arr, length)
-	- t[] copyOfRange(arr, from, to)
-	- void fill(arr, fillValue)
-	- boolean equals(arr1, arr2)
-	- int compare(arr1, arr2)
-	- Stream stream(arr)
-	- List<T> asList(arr);
-
-#### Input ####
-	- Scanner scan = new Scanner(System.in);
-	- nextLine()			//Reads a String value in this line and advances to next line
-	- next()				//Reads this token as string and remain in this line
-	- nextBoolean()	
-	- nextByte()	
-	- nextDouble()	
-	- nextFloat()
-	- nextInt()	
-	- nextLong()	
-	- nextShort()
-	
-#### Output ####
-	- out is an object of PrintStream class, declared as static member of java.lang.System class
-	- System.out.println(), System.out.print(), System.out.printf(), System.out.format()
-	- System.err.println()	// displaying the error or mainly useful to write errror into a separate file.
-
-#### java.lang.Character static methods ####
-	- boolean isLetter(char ch)
-	- boolean isDigit(char ch)	
-	- boolean isWhitespace(char ch)	
-	- boolean isUpperCase(char ch)
-	- boolean isLowerCase(char ch)
-	- char toUpperCase(char ch)
-	- char toLowerCase(char ch)	
-	- String toString(char ch)
-
-######## String class ##########
-	- Create:
-		String s = "value";
-	- Read:
-		for(i=0;i<s.length();i++)
-			char c = s.charAt(int i);
-	- Update and Delete:
-		String is immutable in java.
-	- Instance Methods:
-		int indexOf(char c) or indexOf(String s)
-		int lastIndexOf(char c) or lastIndexOf(String s)
-		boolean contains(String s)
-		String substring(int beginIndex, int endIndex)
-		String[] split(String regex, *int limit)	// limit specifies max size of arr returned, discard overflowing elements
-		String trim()
-	 	String toLowerCase() and  toUpperCase()
-		String concat(str2)
-	    boolean matches(String regex)
-		int compareTo(String anotherString)	// compare two string lexicographically, 1 means greater, 0 equal, -1 less 	
-		int compareToIgnoreCase(String str)
-
-#### java.lang.StringBuilder ####
-	- Create:
-		StringBuilder sb = StringBuilder(), StringBuilder(String s);
-	- Read:
-		for(int i=0;i<s.length();i++)
-			char ch = sb.charAt(i);
-	- Insert element:
-		StringBuilder append(T t)				// t can be any primitive or obj, inseted after transformed to string
-		StringBuilder insert(int offset, T t)
-	- Update an element:
-		void setCharAt(int i, char ch)
-	- Delete an element:	
-		StringBuilder deleteCharAt(int index)
-		StringBuilder delete(int start, int end)
-	- Instance methods:
-		StringBuilder reverse()
-		String toString()
-	
-#### java.lang.Math class ####
-	- Constants:
-		Math.E, Math.PI 
-	- static methods:
-		T abs(T) , min(T a, T b), max(T a, T b) 	// T can be int, long, double, float
-		double ceil(double a), floor(double a), pow(double a, double b), sqrt(double a)		// typecast explicitly to use
-	
-
-#### Packages and imports #####
-	- classes of same packages and java.lang are imported by default.
-	- Mark a class in a pakcage:
-		package <name of package>;
-	- Import the class:
-		import package.*;					// Import all classes from this package.
-		import package.className;			// Import a particular class from this package.
-		import static package.className.*;	// Import static members of class 
-
-
-#### Annotations ####
-	- It is used to provide additional imformation to compiler and other programmer.
-	@Deprecated
-	@Override
-	@Supreswarning
-	@NonNull
-	@FunctionalInterface
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
