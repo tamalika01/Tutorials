@@ -1,0 +1,44 @@
+1. What is software Testing?
+-- Software testing is a method to check whether the actual software product matches expected requirements and to ensure that 
+   software product is detect free. 
+
+2. What is Testing?
+-- Four main stages of testing that need to be completed before a program can be cleared for use.
+    Unit testing, Integration testing, System testing, Acceptance testing
+
+3. Define black box testing and white box testing?
+-- Black box testing: is a type of high level testing in which the primary goal is to evaluate functionalities from a behavioural standpoint.
+          In black box testing, the tester does not test the code; instead, they utilize the program to see if it works as expected.
+--- White box testing: When we have insight into the code or broad information about the architecture of the software in question, we can perform 
+          white box testing, also known as clear box testing. It falls under the category of low level testing and is mostly concerned with integration 
+          and unit testing. White box testing requires programming expertise or at the very least a through grasp of the code that implements a 
+          particular functionality.
+
+4. Why Regression testing not included?
+--- Regression testing is not a separate level of testing. It is just a type of testing that can be performed during any of the four main 
+    software testing stages.
+
+5. What is Unit Testing?
+--- In this testing, the program is submitted to assesments that focus on specific units or components of the software to determine whether
+    each one is fully functional.
+    Aim:- To determine whether the application functions as designed.
+          A unit can refer to a function, individual program or even a procedure, and a white box testing method is usually used to grt the 
+          job done.
+    Benefits:- It can be run evrytime a piece of code is charged, allowing issues to be resolved as quickly as possible.
+               It's quite common for software developers to perform unit tests before delivering software to testers for formal testing.
+
+6. What is Integration Testing?
+--- It allows individuals the opportunity to combine all of the units within a program and test them as a group.
+    Is designed to find interface detects between the modules/functions.
+    Particularly beneficial because it determines how efficiently the units are running together.
+
+7. What is System Testing?
+--- It is the first level in which the complete application is tested as a whole.
+    Goal: To evaluate whether the system has complied with all of the outlined requirements and to see that it meet's Quality Standards.
+          Is undertaken by independent testers who haven't played a role in developing the program. Performed in an environment that closely 
+          mirrors production.
+    Importance: It verifies that the application meets the technical, functional and business requirements that were set by the customers.
+
+8. What is Acceptance Testing(user acceptance testing)?
+--- conducted to determine whetherthe system is ready for release.
+    During this final phase, the user will test the system to find out whether the application meets their business needs.  
