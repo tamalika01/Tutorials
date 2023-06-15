@@ -1,0 +1,73 @@
+1. What is software engineering?
+-- Software engineering is defined as the process of identifying user needs, then designing, creating and testing software to meet those requirements. 
+   It is a discipline of engineering concerned with the growth of software products by the use of well-defined scientific concepts, methodologies, and procedures.
+   
+2. What is the main differences between a computer program and computer software?
+-- The key difference between software is a collection of several programs used to complete tasks, whereas a program is a set of instructions expressed 
+   in a programming language. A program can be software, but software the vice-versa is not true. Software also contains documentation, user guides on 
+   how to use it and not only program. 
+
+3. What is white box testing?
+-- White box testing is a method of software testing that tests, internal structures or workings of an applications, as opposed to its functionality.
+   In WBT, an internal perspective of the system is used to design test cases.
+
+4. What is black box testing?
+-- Black box testing is technique of software testing which examines the functionality of software without peering into its internal structure or coding.
+
+5. What is Unit Testing?
+-- Unit Testing is the process of checking the small pieces of code to ensure that the individual parts of the program works properly on their own.
+
+6. What is Integration Testing?
+-- Integration Testing is conducted to evaluate the compliance of the system or component with specified functional requriments. It occurs after unit testing 
+   and before system testing.
+
+7. What is System Testing?
+-- System testing is a level of testing that validate the complete and fully integrated software product.
+
+8. Difference  between Unit Testing and Integration Testing.
+-- Unit Testing
+      a. Each module of the software is tested separately.
+      b. Tester knows the internal design of the software.
+      c. Performed first of all testing processes.
+      d. It is white box testing.
+      e. Performed by developer.
+-- Integration Testing
+      a. All modules of the software are tested combined.
+      b. Tester doesnot know the internal design of the software.
+      c. Performed after unit testing and before system testing.
+      d. It is black box testing.
+      e. Performed by tester.
+
+9. Difference between Unit Testing and System Testing.
+-- Unit Testing
+     a. Each modules of the software is tested separately.
+     b. Performed by developers.
+     c. Focuses on functional verification.
+     d. Follows the specification of modules.
+     e. Also called white box testing.
+-- System Testing
+     a. Is done to check whether the software or product meets the specified requirements or not.
+     b. Performed by developers and testers.
+     c. Focuses on system validation.
+     d. Follows the requirements specifications.
+     e. Also called black box testing.
+
+10. Describe SDLC in brief.
+--  The Software Development Life cycle(SDLC) is a number of fundamental phases that teams must follow in order to produce and deliver high-quality
+    software. Software typically goes through the following phase.
+    --- Requirements Gathering
+            The team identifies, collects, and defines core issues, requirements, requests and customer expectations related to the software applications
+            or service during this stage of the project. Gathering software specification, create a through strategy, documentation, issue tracking and project or 
+            product planning, including allocating the resources, are some tasks done during this phase.
+    --- Software design
+             The team makes software design decisions regarding the architecture and make the software solution throghout this design phase of development.
+    --- Software Development
+            Teams develop software solutions based on the design decissions made during earlier stages of the project.
+    --- Testing and Integration
+             Software is packaged and tested to ensure quality . Quality assurance, often known as testing, ensures that the solutions deployed fulfil the 
+             specified quality and performance criteria.
+    --- Deployment
+            The software is installed in a production setting. The gathered, designed, built, and tested work is shared with the software services customers 
+            uses.
+    --- Operation and Maintenance
+            The software is installed in a production setting. The coork is shared with the software service's customers and users.
