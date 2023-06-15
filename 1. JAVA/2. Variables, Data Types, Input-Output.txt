@@ -1,19 +1,29 @@
-####Output###
-   System.out.print("Hello World");
+#### Output ###
+  1. System.out.print("Hello World");
      This will print msg but not insert a new line
-   System.out.println("Hello World");
+
+  2. System.out.println("Hello World");
      This will print msg and also insert a new line at end
 
-   -- System is a class, print is a function
-   1. print 2.println 3. "/n" ex: System.out.print("Hello World /n");
+  System is a class, print is a function
 
-###Data Types###
-Java is a typed language.
+### Data Types ###
+  - Java is a typed language.
+    typed language ka matlab kya hota hai likhna.
+
 - Data types are of two types.
-   --- Primitive: int, byte, short, long, char, float, boolean, double
-   ---Non Primitive: String, Array, Class, Array, Interface
+   1. Primitive (total 8):
+    byte (1byte), short(2byte), int (4byte), long (8byte) // all 4 used to store integer value, based on range use one 
 
-###Input###
+    float(4byte) , double (8byte) // both used to store floating point value, based on range use one
+
+    char (1byte)    // used to store 1 char
+
+    boolean (1byte) // used to store 2 values either true or false.
+
+   2.Non Primitive: String, Array, Class, Array, Interface
+
+### Input ###
 --Java util.Scanner class provides method to take input
 
 Scanner sc = new Scanner(System.in);//create object of sc and  taken input from user 
@@ -22,3 +32,40 @@ String name = sc.nextLine(); // store the input in name
 
 -- At the end close the Scanner
         scanner.close()
+
+#### Variables #######
+  - Variables are used to store values in memory.
+  - Create:
+    1st way : 
+      type name;    // default value will be stored in name Variable since we are not providing. 
+    2nd way:
+      type name = value;  // create a variable with this value.
+    3rd way:
+      type name1 = value1, name2 = value2;  // create many variable of same type in one go.
+
+  - type can be int, float, boolean, double etc and name we can keep anything.
+
+
+  ####### Operators #########
+    - Arithmetic:
+      +, -, *, /, % (a%b = remainder when a will be divided by b)
+
+    - Assignment operator:
+      a=b // assign value of b to a, now both a and b have same value.
+
+    - Comparison operator
+      - Returns either true or false, used in if/else, loops to test
+      - > , >= , <, <=, ==, !=
+    
+##### Type casting #####
+  - It means to change the type of variable.
+  - 2 types:
+    1. Implicit typecast:
+      typecast automatic performed by compiler internally.
+      int a= 5, int b=3;
+      int c=a/b;  // result of a/b will be 5/3 some thing 1.666... which is float, compiler internall will change it to int, which is 1, so c=1.
+
+    2. Explicit typecast:
+        We have to typecast mannually in our program.
+        e.g double a = 8.0;
+            int b = (int) a;
