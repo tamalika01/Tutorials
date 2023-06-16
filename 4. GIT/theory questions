@@ -27,14 +27,32 @@ Ans--git push is a Git command used to upload local repository changes to a remo
 Ans--git commit is a Git command used to save changes made to a local repository. 
      It is used after a developer has made changes to their codebase and wants to create a new commit to save those changes.
 
-8. Basics Command:
+8. Types of files in git:
+     1. Untracked files:
+          These files are not tracked by git, usually new files created.
+          To make untracked file to track, git add [file name] or git add .
+
+     2. UnModified:
+          These files are tracked by git but nothing changed since last time commit. so no problem.
+
+     3. Modified:
+          These files are tracked by git and it was changed since last time commit. we have two options now
+          git add [file]      // mark the changes to stage (i.e accept)
+          git restore [file name]  // reject the change
+
+     4. staged
+          These files are one whoose changes is make permanenty and will be included in next commit.
+          git commmit -m "msg here"   // commit all staged files
+          git push                    // push this commit
+9. Basics Command:
     
     ## git clone : 
            Usage: git clone [url]
            --This command is used to obtain a repository from an existing URL.
     ## git add : 
-           Usage: git add [file]
+           Usage: git add [file] or git add .
           --This command adds a file to the staging area.
+          -- git add . , adds all files into stage area
     ## git commit :
            Usage: git commit -m “[ Type in the commit message]”
            --This command records or snapshots the file permanently in the version history.
