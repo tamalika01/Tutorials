@@ -1,0 +1,40 @@
+#### HTML TABLES ####
+
+--HTML tables allow web developers to arrange data into rows and columns.
+--A table in HTML consists of table cells inside rows and columns.
+
+1. Table Header:
+   -- Sometimes we want our cells to be table header cells. In those cases use the <th> tag instead of the <td> tag:
+   --th stands for table header.
+        <table>
+            <tr>
+               <th> Name </th>
+               <th> Roll No </th>
+            </tr>
+        </table>
+
+2. Table cells:
+   -- Each table cell is defined by a <td> and a </td> tag.
+   --td stands for table data.
+   --Everything between <td> and </td> are the content of the table cell.
+       <table>
+          <tr>
+             <td>Emil</td>
+             <td>Tobias</td>
+             <td>Linus</td>
+          </tr>
+       </table>
+
+3. Table Rows: 
+    -- Each table row starts with a <tr> and ends with a </tr> tag.
+    --tr stands for table row.        
+         <table>
+            <tr>
+               <td> Tamalika </td>
+               <td> Ratul </td>
+            </tr>
+         </table>
+
+4. Caption tag:
+    -- used to caption the table
+        <caption> Student Data </caption>
