@@ -1,0 +1,19 @@
+### Array ###
+--Arrays in Java are like a list of elements of the same type i.e. a list of integers, a list of booleans etc.
+ 
+ 1. Create an array:
+     syntax--  
+         type[] arrayName = new type[size];
+         int[] marks = new int[3];
+         marks[0] = 97;
+         marks[1] = 98;
+         marks[2] = 95;
+
+         or
+
+         int[] marks = {98, 97, 95};
+
+
+    
+
+  
