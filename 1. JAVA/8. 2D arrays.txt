@@ -1,0 +1,7 @@
+### 2D Arrays ###
+
+1. Declaration:-
+     syntax--
+         int[][] arrayName = new int[rows][columns];
+         int[][] marks = new int[3][4];
+        
