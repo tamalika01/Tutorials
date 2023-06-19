@@ -1,0 +1,55 @@
+### Color and Backgrounds ###
+
+1. color property-- can be used to set the text color inside an element.
+                    p{
+                      color:red;
+                    } 
+
+2. background color property-- specifies the background color of a container.
+                   p{
+                       background-color: brown;
+                    }
+
+3. background-image property-- used to set an image in the background.
+                    body{
+                        background-img: url("harry.jpg")
+                    }
+
+4. background-repeat property-- used to repeat the background.
+                                a. repeat X-- repeatin horizontal direction
+                                b. repeat Y-- repeat in vertical direction
+                                c. no repeat-- image not repeat
+
+5. background-size property-- used tp set the background size.
+                                a. cover-- fits and no empty space remains
+                                b. contain-- fits and image is fully visible
+                                c. auto-- Display in original size
+                                d. {{width}}-- set width and height will be set automatically
+                                e. {{width}} {{height}}-- set the width and height
+
+6. background-position property-- sets the starting position of the background image 
+                     .div{
+                        background-position: left- top;
+                     }
+
+7. background-attachment property-- defines a scrollable/non scrollable characters of a backgroundimage.
+                     .div2{
+                        background-attachment:fixed;
+                     }
+
+8. A single property to set multiple background properties:
+                     .div3{
+                        background: red url('image.png') no-repeat fixed right-top
+                     }                     
+
+
+
+
+
+
+
+
+                    
+
+                    
+                    

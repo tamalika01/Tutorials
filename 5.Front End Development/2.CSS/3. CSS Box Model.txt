@@ -1,0 +1,40 @@
+### CSS BOX MODEL ###
+ -- The Css box model looks at all the HTML elements as boxes.
+
+ 1. Setting width and height--
+           #box{
+            height:70px;
+            width:70px;
+           }
+
+2. Total hight--
+      = height + top/bottom padding + top/bottom border + top/bottom margin
+
+3. Setting margin and padding--
+           .box{                           
+            margin:3px;                                     
+            padding:4px;
+           }
+           or
+           .boxMain{
+            margin: 7px 0px 2px 11px; // top right bottom left respectively
+           }
+
+4. Setting boeders--
+           .box{
+            border-width:2px;
+            border-style:solid;
+            border-color:red;
+           }
+
+5. Border radius-- used to set border radius to create rounded borders
+            .div2{
+                border-radius:7px;
+            }
+
+6. Margin Collapse:- When two margins of different elements overlap the equivalent margin is the greater of the two. 
+                     This is called margin collapse.
+
+
+           
+
