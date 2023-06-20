@@ -1,0 +1,37 @@
+### String Builder ###
+
+-- Strings in Java are immutable ie. it cannot be changed.
+
+1. Declaration--
+     StringBuilder sb = new StringBuilder("Apna College");
+     System.out.println(sb);
+
+2. Get A Character from Index--
+      StringBuilder sb = new StringBuilder("Tony");
+     //Set Char
+     System.out.println(sb.charAt(0));
+
+3. Set a Character at Index--
+     StringBuilder sb = new StringBuilder("Tony");
+     //Get Char
+     sb.setCharAt(0, 'P'); // 0 is the index of which we have to change, p is the character that we will input
+     System.out.println(sb);
+
+4. Insert a character at some index--
+      sb.insert(0, 'S'); // 0 is the index we want to put the character S
+     System.out.println(sb);
+
+5. Delete the character--
+     sb.delete(0, 1);
+     System.out.println(sb);
+
+6. Append a char--
+     sb.append(" Stark");
+     System.out.println(sb); 
+
+
+
+
+
+
+
