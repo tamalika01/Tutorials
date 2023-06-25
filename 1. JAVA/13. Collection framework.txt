@@ -1,0 +1,33 @@
+### Collection Framework ###
+ 
+1. collection of clases and interfaces
+          Iterable interfaces
+                collections
+                     list, Queue, Set
+
+2. Methods of collections:
+   --add : add information in the clases
+   --size: to get the size of the object
+   --remove: to remove a object
+   --iterate: use for loop or iterate
+   --addAll: use to add many things in a data structure
+   --removeAll: use to remove many things in a data structure
+   --clear: completely clear te data structure
+
+3. List Interface:
+       ArrayList, LinkedList, Vector
+                                stack
+
+4. Queue Interface(First in First our-FIFO):
+        Queue
+          PriorityQueue, LinkedList, Deque(Double ended Queue)
+                                       ArrayDeque
+
+5. Set Interface:
+        Set
+         HashSet, LinkedHashSet, SortedSet
+                                    TreeSet
+
+6. Map Interface:
+        HashMap, LinkedHashMap, SortedMap, HashTable
+                                  TreeMap
