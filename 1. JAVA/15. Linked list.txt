@@ -1,0 +1,41 @@
+### Linked List ###
+
+1. Definition:
+
+2. Properties:
+         1. Variable size
+         2. Non-contiguous memory
+         3. Time Complexity:
+                --Insert: O(1) used when we want to insert in middle..as time taken less.
+                --Search: O(n) 
+
+3. Node stores two things..one is data, another is next pointer(reference).
+4. Head: first node of linked List
+5. Tail: last node of linked List
+
+6. Types: Singular, Double ended, Circular 
+
+7. create:
+      LinkedList<data type> = new LinkedList<>();
+      LinkedList<String> list = new LinkedList<>();
+
+8. Add:
+     list.addFirst("a");
+     list.addFirst("is");
+
+     list.addFirst("This"); // add list in first
+    list.addLast("list"); // add list in last
+
+9. size:
+     list.size();
+
+10. Iterate:
+     for(int i=0; i<list.size(); i++) {
+    	System.out.println(list.get(i));
+    }
+    System.out.println();
+
+11. delete: 
+     list.removeFirst();
+     list.removeLast();
+

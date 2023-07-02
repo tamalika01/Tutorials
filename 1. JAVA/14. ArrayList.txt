@@ -1,0 +1,50 @@
+### ArrayList ###
+
+-- The size of the ArrayList is varriable.
+-- We can store only objects in the ArrayList which is stored in the heap.
+
+1. Creating : 
+    --to create a list
+     Arraylist<data type>  var = new ArrayList<>();
+     ArrayList<Integer> list = new ArrayList<>();
+
+2. Add : 
+    -- to add elements in a list
+    var.add(0); // 0 is added
+    list.add(2); // 2 is added
+
+3. Get: 
+   -- to get a elements from a ArrayList
+     list.get(index);
+     list.get(2);
+
+4. Add elements in between:
+   -- to add a element in between of a ArrayList
+      list.add(index, element);
+      list.add(1,30);
+
+5. Set a element:
+   -- to set or change a element
+      list.set(index, element);
+      list.set(1,5);
+
+6. Delete element:
+    -- to remove an element
+       list.remove(index);
+       list.remove(1);
+
+7. Size:
+    -- to return the size of an Arraylist
+       list.size();
+
+8. To iterate or traverse:
+    -- we use loops to traverse the elements
+      for(int i=0; i<list.size(); i++) {
+		 System.out.println(list.get(i));
+	    }
+	  System.out.println();
+
+9. Sorting: 
+    -- used to arrange the elements in ascending order
+       Collections.sort(list);
+       System.out.println(list);
