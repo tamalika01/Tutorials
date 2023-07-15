@@ -1,0 +1,52 @@
+#### Database vs database management system ####
+	- Database is a collection of inter-related data in a structured way. Depending on how we can organise data in database,
+	- There are 2 types: relational and non-relational database.
+	- DBMS is a software which is used to create, manage, delete database. Many vendors provide dbms.
+	
+#### Advantages of dbms over file system ####
+	- control data redundancy
+	- Easier to mange, provides ui
+	- provides security and backup
+	- provides query language
+	
+#### DisAdvantages ####
+	- cost of hardware and software
+	- difficult to manage for small project
+	
+#### Relational vs Non-Relational databases ####
+	- Relation databases(MySql, Oracle) stores data in form of tables and columnns. Advantages are easier to maintain, provides 
+	security and query languages.
+	- Non-relation database(Mongodb, radis, graphql) stores data in key-pair forms or graph databases. Suitable for large data stores.
+	
+#### DBMS Architechure ####
+	- 1 tier architechure:
+		user directly run query to communicate directly with database.
+	- 2 tier architechture:
+		application at client-side directly communicate with database server
+	- 3 tier architechture
+		client communicate with application server which communicate with database server. Client does not aware of database server
+		and databaser server also not aware of client server.
+		
+
+#### schema vs instance ####
+	- schema means design of database. It represents how to store database.
+	- instance means content of database at a particular instant of time.
+	
+#### 3 schema architechture ####
+	- DBMS 3 tier architechture divides whole system into 3 different layer which are independent to each other.
+	- View-Level
+		Different users of database see different view of data.
+	- Conceptual or Design-Level
+		Database designer design the database architecture that how data will be organised and what are relations b/w them.
+	- Physical-Level
+		It describes how data is actually stored in physical disks. what are indexing used etc. Database administrator works here.
+	- 3 schema architechture is used to achieve data independence.
+	- data independence that change at one level does not affect the another level.
+	
+#### steps to design a database ####
+	- Requirements gathering
+	- conceptual design using E-R model
+	- Logical desisgn (Relational Model)
+	- Physical level design ( deciding keys, database vendors, indexing)
+	
+	
