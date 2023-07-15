@@ -1,4 +1,4 @@
-#### Output ###
+e#### Output ###
   1. System.out.print("Hello World");
      This will print msg but not insert a new line
 
@@ -9,7 +9,7 @@
 
 ### Data Types ###
   - Java is a typed language.
-    typed language ka matlab kya hota hai likhna.
+  - Typed languages are the languages in which we define the type of data type and it will be known by machine at the compile-time or at runtime.
 
 - Data types are of two types.
    1. Primitive (total 8):

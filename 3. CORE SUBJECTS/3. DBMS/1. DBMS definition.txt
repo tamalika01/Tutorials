@@ -5,7 +5,7 @@
 	
 #### Advantages of dbms over file system ####
 	- control data redundancy
-	- Easier to mange, provides ui
+	- Easier to manage, provides ui
 	- provides security and backup
 	- provides query language
 	
@@ -15,17 +15,17 @@
 	
 #### Relational vs Non-Relational databases ####
 	- Relation databases(MySql, Oracle) stores data in form of tables and columnns. Advantages are easier to maintain, provides 
-	security and query languages.
+	  security and query languages.
 	- Non-relation database(Mongodb, radis, graphql) stores data in key-pair forms or graph databases. Suitable for large data stores.
 	
 #### DBMS Architechure ####
 	- 1 tier architechure:
-		user directly run query to communicate directly with database.
+		 user directly run query to communicate directly with database.
 	- 2 tier architechture:
-		application at client-side directly communicate with database server
+		 application at client-side directly communicate with database server
 	- 3 tier architechture
-		client communicate with application server which communicate with database server. Client does not aware of database server
-		and databaser server also not aware of client server.
+		 client communicate with application server which communicate with database server. Client does not aware of database server
+		 and database server also not aware of client server.
 		
 
 #### schema vs instance ####
@@ -46,7 +46,7 @@
 #### steps to design a database ####
 	- Requirements gathering
 	- conceptual design using E-R model
-	- Logical desisgn (Relational Model)
+	- Logical design (Relational Model)
 	- Physical level design ( deciding keys, database vendors, indexing)
 	
 	
