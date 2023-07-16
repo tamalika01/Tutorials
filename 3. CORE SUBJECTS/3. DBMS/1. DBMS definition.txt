@@ -1,10 +1,10 @@
 #### Database vs database management system ####
-	- Database is a collection of inter-related data in a structured way. Depending on how we can organise data in database,
-	- There are 2 types: relational and non-relational database.
+	- Database is a collection of inter-related data in a structured way. 
+	- Depending on how we can organise data in database, There are 2 types: relational and non-relational database.
 	- DBMS is a software which is used to create, manage, delete database. Many vendors provide dbms.
 	
 #### Advantages of dbms over file system ####
-	- control data redundancy
+	- control data redundancy 
 	- Easier to manage, provides ui
 	- provides security and backup
 	- provides query language
@@ -22,7 +22,7 @@
 	- 1 tier architechure:
 		 user directly run query to communicate directly with database.
 	- 2 tier architechture:
-		 application at client-side directly communicate with database server
+		 application at client-side directly communicate with database server 
 	- 3 tier architechture
 		 client communicate with application server which communicate with database server. Client does not aware of database server
 		 and database server also not aware of client server.
@@ -48,5 +48,4 @@
 	- conceptual design using E-R model
 	- Logical design (Relational Model)
 	- Physical level design ( deciding keys, database vendors, indexing)
-	
 	
