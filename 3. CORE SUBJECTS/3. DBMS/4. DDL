@@ -67,7 +67,7 @@
 	- ALTER TABLE table_name
 		a. ADD column_name [other constraints]
 		b. ADD UNIQUE(column_name) or PRIMARY KEY (column)
-		c. DROP column_name;
+		c. DROP  COLUMN column_name;
 		d. RENAME column_name TO new_name;
 		e. RENAME TO new_table_name
 		f. ALTER column_name data_type [other constraints]
