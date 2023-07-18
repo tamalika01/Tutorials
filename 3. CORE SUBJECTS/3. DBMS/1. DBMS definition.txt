@@ -5,7 +5,7 @@
 	
 #### Advantages of dbms over file system ####
 	- control data redundancy 
-	- Easier to manage, provides ui
+	- Easier to manage, provides UI
 	- provides security and backup
 	- provides query language
 	
