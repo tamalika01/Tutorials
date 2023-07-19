@@ -12,14 +12,14 @@
 
     #### Common data types ###
     1. VARCHAR(length like 20 )
-        column wil  have variavlevariable character length mtbl ki agr column m length 5 aya to 5 size ka hi memory hoga pr agr VARCHAR(20)
+        column wil  have variavle character length mtbl ki agr column m length 5 aya to 5 size ka hi memory hoga pr agr VARCHAR(20)
         hai aur 25 ka length ka ek string insert hoga to ye first 20 hi insert krega..matlab small hoga to utna size bada hoga to no allow
 
     2. INTEGER
 
     ##### constraints ####
-    - constraints are conditions which are applied to a column and ever record must follow that constraints.
-    - some commont constraints:
+    - constraints are conditions which are applied to a column and every record must follow that constraints.
+    - some commonn constraints:
         1. NOT NULL
             you can leave this column filed blank or insert null value.
         2. PRIMARY KEY 
