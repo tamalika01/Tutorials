@@ -1,3 +1,41 @@
 ### HASHSET ###
 
-1. Definition:
+1. Definition: Hashset is a class that extends Abstract Set and implements the set Interface in Java. It allows us to store unique items 
+               and access them in constant time(on average). No duplicate values are stored.
+
+2. Time complexity: Three major operations (Insert, Search, Delete) take constant time or same time. That is why it is more efficient in data structure.
+                     
+                     Insert/Add : O(1)
+                     Search/Contains: O(1)
+                     Delete/Remove: O(1)
+
+3. Create: HashSet<Integer> set  = new HashSet<>();
+
+4. Insert: set.add(1);
+           set.add(2);
+
+5. Search/Contains: if(set.contains(1)){
+                       System.out.println("Set contains 1");
+                    }
+
+                    if(!set.contains(6)){
+                        System.out.println("Set does not contains 6");
+                    }
+
+6. Delete: set.remove(1);
+           if(!set.contains(1)){
+                        System.out.println("Set does not contains 1");
+           }
+
+7. Size: System.out.println("Size of the set is:" + set.size());
+
+8. Print all Elements:  System.out.println(set);
+
+9. Iterator: import java.util.Iterator;
+             Iterator it = set.iterator();
+
+10. Working of Iterator: while(it.hasNext()){
+                         print(it.next());
+                         }
+                         
+        
