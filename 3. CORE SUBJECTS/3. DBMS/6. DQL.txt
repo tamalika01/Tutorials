@@ -90,17 +90,42 @@
 	- Join type:
 		INNER JOIN or JOIN
 			It returns rows from 2 or more tables which passes the join conditions.
+			SYNTAX: SELECT column_name(s) FROM table1 INNER JOIN table2 ON table1.column_name = table2.column_name;
+			SELECT COMPANY.NAME, EMPLOYEE_1.NAME, EMPLOYEE_1.EMP_ID FROM COMPANY 
+			INNER JOIN EMPLOYEE_1 ON COMPANY.COMPANY_ID=EMPLOYEE_1.COMPANY_ID;
+
 		LEFT JOIN
 			A left join returns all the rows from the left table, and the matched rows from the right table. If there is no match in 
 			the right table, the result will contain NULL values for the right table's columns.
+			SYNTAX: SELECT column_name(s) FROM table1 LEFT JOIN table2 ON table1.column_name = table2.column_name;
+
 		RIGHT JOIN
 			A right join returns all the rows from the right table, and the matched rows from the left table. If there is no match in 
 			the right table, the result will contain NULL values for the left table's columns.
+			SYNTAX:SELECT column_name(s) FROM table1 RIGHT JOIN table2 ON table1.column_name = table2.column_name;
+
 		FULL JOIN
 			A full join returns all the rows from the both table which passes the join conditions. Also it includes all record
 			from left table which does not match with any record in right table on join condition. For all the records of this
 			type, populates null value for right table columns. Similiearly, includes all record from right table which does
 			not matches with any records from left table and populate null values on left table columns for this kind of record.
+			SYNTAX: SELECT column_name(s) FROM table1 FULL OUTER JOIN table2 ON table1.column_name = table2.column_name WHERE condition;
+
 		CROSS JOIN
 			returns cartesian product of 2 tables
+			SELECT * FROM [Table_1] CROSS JOIN [Table_2]
+
+
+	- Join Conditions:
+		- ON <where clause predicates>
+			cartesian product the 2 tables and apply this predicate to select if matches or not
+			applies on every kind of join type
+		- USING (column1, column2,..)
+			if both tables have same name and data type of column, it will apply equal predicates on both tables.
+		- NATURAL join
+			- it is a join operation which implicitly create a join condition that common columns in both table should have equal 
+			values.
+			- It applies on inner join, left join, right join //yha tk bolna natural join k puche t 
+			- It returns result field in order, <common columns> then <left table remaining columns> then <rigt table remaining columns>
+			- e.g table1 natural join tabl2 or table1 natural left join tabl2;
 
