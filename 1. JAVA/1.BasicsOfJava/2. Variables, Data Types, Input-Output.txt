@@ -1,4 +1,4 @@
-e#### Output ###
+#### Output ###
   1. System.out.print("Hello World");
      This will print msg but not insert a new line
 
@@ -21,7 +21,7 @@ e#### Output ###
 
     boolean (1byte) // used to store 2 values either true or false.
 
-   2.Non Primitive: String, Array, Class, Array, Interface
+   2.Non Primitive: String, Array, Class, Interface
 
 ### Input ###
 --Java util.Scanner class provides method to take input
@@ -68,4 +68,4 @@ String name = sc.nextLine(); // store the input in name
     2. Explicit typecast:
         We have to typecast mannually in our program.
         e.g double a = 8.0;
-            int b = (int) a;
+            int b = (int) a; 

@@ -18,7 +18,8 @@
 		It contains all tools needed to write, compile, debug and run java code. It include javac, jvm ,jre,
 		binary files needed to run java program.
 	-jvm ( java virtual machine ) 
-		It is abstract machine and provides run time enviornment to execute java bytecode. jvm communicates with os hardware and      so it is plateform dependent. we need different versions of jvm on different os. To run bytecode on any 
+		It is abstract machine and provides run time enviornment to execute java bytecode. jvm communicates with os hardware and    
+		  so it is plateform dependent. we need different versions of jvm on different os. To run bytecode on any 
 		machine we will only need jvm for that machine.
 	- jre (java run enviornment ) 
 		It is an implementation of jvm. we need jre to run any java program as it provides run time enviornment for execution of 
@@ -28,5 +29,4 @@
 		a. Write the java program and save it with .java extension say Tmp.java
 		b. Compile it into bytecode, javac Tmp.java arg1 arg2 
 		c. After this step we have .class file which is bytecode fil and independent of os.
-		d. Run it on jvm, java FileName arg1 arg2 arg3
-
+		d. Run it on jvm, java FileName arg1 arg2 arg3 

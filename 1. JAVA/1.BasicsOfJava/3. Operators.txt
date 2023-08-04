@@ -5,7 +5,7 @@
 
 1. Arithmetic Operators:
      --Binary:  Operations performed on two operands. eg-  +, -, *, /, %
-     --Unary:   Operations performed on singe operand eg-  ++(increment), --(decrement)
+     --Unary:   Operations performed on single operand eg-  ++(increment), --(decrement)
 
      Increment are of two types:
      1. Pre-increment:  ++a

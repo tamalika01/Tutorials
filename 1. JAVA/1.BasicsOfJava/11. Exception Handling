@@ -1,0 +1,70 @@
+
+######## Exception Handling ###########
+- Exception means Abnormal Condition , Runtime error
+- An exception is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's execution. 
+ 	- When an error occurs within a method, the method creates an object and hands it off to the runtime system. The object, called an 
+ 	  exception object, contains information about the error, including its type and the state of the program when the error occurred. 
+ 	  Creating an exception object and handing it to the runtime system is called throwing an exception.
+
+#### Type of Exceptions ####
+ 	- Checked Exceptions:
+ 		These type of exceptions are checked by compiler and a well written application code should handle this either by  Catch or 
+ 		Specify Requirement mechanism.
+ 	- Unchecked Exceptions
+ 		Runtime Exception
+ 			These are exceptions which are internal to application, arised due to programming bugs, improper use of apis etc.
+ 			Usually application are not able to recover from it.
+
+#### Error ####
+	- Error is a subclass in java which inherits from Throwable class and indicates a serious problem in our application and usually application are not able to 
+	  recover from error and eventually stops running.
+ 			
+#### Hierrarchy of Exception classes ####
+java.lang.throwable
+	- java.lang.Exception
+		SqlExcepiton (checked)
+		IoException  (checked)
+		ClassNotFoundException  (checked)
+		RunTimeException
+			ArithmeticException
+			NullPointerException
+			IndexOutOfBoundException
+	- java.lang.Error
+		StackOverFlowError
+		OutOfMemoryError
+
+#### Handling Exceptions ####
+	- Checked Exceptions must be handled else compiler will throw error. Unchecked exceptions may or may not be handled.
+	- try-cath-finally block
+		try{
+			// put code which can generate any exception here
+		}
+		cath(ExceptionType e){
+			// Execute this code if a execution type arises
+		}
+		finally{
+			// This section of code always executes. So any cleanup code is putted here.
+		}
+		
+	- try with resources statement
+		Resources are any object which need to be closed after it's use.
+		try( // open all resources needed to execute program here ){
+			// as soon as execution of try block of code is done. It closes all the resources associated with it.
+		}
+		catch{
+		}
+		finally{
+		}
+	- specify all exceptions thrown by the method in method signature using throws keyword
+		void sampleMethod() throws Exception1, Exception2{
+			// any method which will call this method must handle the exception1 and exception2 with try or catch block or else
+			// it should declare in it's method declaration.
+		}
+		
+#### How to throw a exception ####
+	- inside any code we can throw a exception using throw code
+		throw new ExceptionType("msg");
+		
+#### Create your own exception
+	- create a class which extends any exception class and simply call the constructor of parent class.
+		

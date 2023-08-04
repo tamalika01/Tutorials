@@ -4,7 +4,7 @@
 	- priviledges are: CREATE, UPDATE, SELECT, INSERT, DELETE, DROP, CONNECT, TRUNCATE etc.
 	- Internally store all user's information and privileges into mysql.user table;
 	
-#### Users of database ####
+#### Users of database ####  
 	- By default provide a root user which has all privilidges of database system.
 	- To enter as a root user:
 		sudo mysql;
