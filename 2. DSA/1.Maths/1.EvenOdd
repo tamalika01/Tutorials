@@ -1,8 +1,18 @@
-Q Check Wheather given number is even or odd
+Q. Check Wheather given number is even or odd
 https://practice.geeksforgeeks.org/problems/odd-or-even3618/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article
 
 Approach:
+Suppose a number N, when it will be divided by 2 and remainder comes 0, then it is even, else it will be odd.
+Now a trick is there, if the method is declared in string then we have to return it in a double quotation mark ""
 	
 	
 Code:
-	
+	static String oddEven(int N){
+        // code here
+        if(N%2==0){
+       return "even";
+        }
+        else{
+        return "odd";
+        }
+    }

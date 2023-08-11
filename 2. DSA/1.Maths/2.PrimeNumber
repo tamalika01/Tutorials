@@ -1,7 +1,38 @@
-Q Check if a number is prime or not
+Q. Check if a number is prime or not
 https://practice.geeksforgeeks.org/problems/prime-number2314/1
 
-Approach:
+Approach 1: prime number- divisible by 1 and itself. At first we check N is lesser than or equal to 1, if it is..then it will 
+            not a prime number. Then we stat checking from 2 to N-1. If N is divisible by 2 then it is not a prime number
+            otherwise it becomes the prime number.
+
+Approach 2:  At first we check N is lesser than or equal to 1, if it is..then it will not a prime number. After that we are checking 
+             from 2 to sqrt of N because the number when will not be divisible by sqrt of N then  N will not be
+             divisible by any further number also. If N is divisible by 2 then it is not a prime number
+            otherwise it becomes the prime number. But here we have written sqrt(N) like this:
+            N=9, sqrt(N)=3
+            ie. N=9, i*i<=N  ----> i*i<=9 ----> i<=3
+
 
 Code:
+static int isPrime(int N){
+        // code here
+       if(N<=1)
+       return 0;                   // 0 means not a prime number, 1 means is a prime number.
+        for(int i=2; i<=N-1; i++){
+            if(N%i==0)
+            return 0;
+        }
+        return 1;
+    }
 	
+
+    static int isPrime(int N){
+        // code here
+       if(N<=1)
+       return 0;
+        for(int i=2; i*i<=N; i++){
+            if(N%i==0)
+            return 0;
+        }
+        return 1;
+    }

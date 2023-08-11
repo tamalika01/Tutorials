@@ -1,2 +1,21 @@
-QFind factorial of a number
+Q. Find factorial of a number
 https://practice.geeksforgeeks.org/problems/factorial5739/1
+
+Approach: Take a variable ans and assign it 1. Then we have to iterate a loop from 1 to N. Then if we do ans*i, then the 
+          factorial comes out of N.
+          N=3, ans=1
+          i=1---> ans=1*1=1
+          i=2---> ans=1*2=2
+          i=3---> ans=2*3=6
+          hence ans=6....which is the factorial of 3.
+
+
+Code:
+static long factorial(int N){
+        // code here
+        long ans=1;
+        for(int i=1; i<=N; i++){
+             ans = ans*i;
+         }
+        return ans;
+    }

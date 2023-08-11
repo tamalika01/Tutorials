@@ -1,5 +1,45 @@
 Q sum of digits
 https://practice.geeksforgeeks.org/problems/sum-of-digits1742/1
 
+Approach: At first take a sum variableand assign it to 0; If the number!=0 then we will proceed.
+          12%10 = 2
+          12/10 = 1
+          if we divide a number by 10 then remainder comes the last digit and qoutient comes the remaining digits
+          of that number. So again we have to divide the remaining digits by 10. It will continue.
+          then add the digits.
+
+
+Code:
+static int sumOfDigits(int N) {
+        // code here
+        int sum = 0;
+        while(N!=0){
+            sum+= N%10;
+            N/=10;
+        }
+        return sum;
+    }
+
+
 Q reverse given number
 https://practice.geeksforgeeks.org/problems/reverse-digit0316/1
+
+Approach:  Reverse the n number. So let reverse number is ans. Initially ans=0, Now we can get the last digit of any number 
+           by modulo with 10, then store it in ans. Then remove the digit from the number as it is already used from n by 
+           dividing n by 10. Now we know that to add a new digit we have to do ans= ans*10+d, So mainly take one by one the
+           digits from number, do modulo with 10, it return the last digit, then add it with the ans...like this the
+           reverse number becomes.
+
+Code:
+public long reverse_digit(long n)
+    {
+        long sum=0;
+        long temp=0;
+        while(n!=0){
+            temp=n%10;
+            sum=sum*10+temp;
+            n=n/10;
+        }
+        return sum;
+    }
+
