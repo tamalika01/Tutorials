@@ -1,0 +1,33 @@
+Q. Search an element in an array.
+https://practice.geeksforgeeks.org/problems/search-an-element-in-an-array-1587115621/1?page=1&difficulty[]=-2&difficulty[]=-1&sortBy=submissions
+
+Approach: In a array we have to check each element from start. If the required element is found, print that index.
+          If not found in the array then return -1.
+
+Code:
+static int search(int arr[], int N, int X)
+    {
+        for(int i=0; i<arr.length; i++){
+            if(arr[i]==X)
+            return i;
+         }
+        return -1;
+        
+    }
+
+Q. Print the Value equal to index value
+https://practice.geeksforgeeks.org/problems/value-equal-to-index-value1330/1?page=1&difficulty[]=-2&difficulty[]=-1&sortBy=submissions
+
+Approach: Let assume the array in 1 indexing. Now we have the check that, the index and the element in that index is same or not.
+          check from the first element, if it matches then store it in a list, now check the next one, like this check all
+          the elements. when the index and the element will match, then store in in list. finally return the list.
+
+Code:
+ArrayList<Integer> valueEqualToIndex(int arr[], int n) {
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        for(int i=0; i<arr.length; i++){
+            if(arr[i]==i+1)
+            arrayList.add(arr[i]);
+        }
+        return arrayList;
+    }

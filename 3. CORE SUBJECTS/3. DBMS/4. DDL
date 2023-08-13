@@ -7,12 +7,12 @@
     ### Show database and tables ####
     - login to sql client and then run to show all database created
          SELECT NAME FROM v$database;
-    - shwo tables of a database, first connect the database in sql developer then run 
+    - show tables of a database, first connect the database in sql developer then run 
         SELECT owner, table_name FROM dba_tables;
 
     #### Common data types ###
     1. VARCHAR(length like 20 )
-        column wil  have variavle character length mtbl ki agr column m length 5 aya to 5 size ka hi memory hoga pr agr VARCHAR(20)
+        column will  have variavle character length mtbl ki agr column m length 5 aya to 5 size ka hi memory hoga pr agr VARCHAR(20)
         hai aur 25 ka length ka ek string insert hoga to ye first 20 hi insert krega..matlab small hoga to utna size bada hoga to no allow
 
     2. INTEGER

@@ -1,0 +1,25 @@
+Q. Find the Minimum and Maximum element.
+ https://practice.geeksforgeeks.org/problems/find-minimum-and-maximum-element-in-an-array4428/1
+
+Approach: From an array we have to find the minimum and maximum number. So let, min and max is the first number of array.
+          now if we check that the first number is greater than the second number than we can replace it with the second number.
+          Now the second number becomes min. In this way if we check upto the last of the array, when min becomes smaller than the next 
+          number, then we can say that.. that is the min.
+          Similarly, first number is max, check the second number with it, if second number is greater than max, then max will be 
+          the second number. upto the last element of the array we have to check it, when the next number becomes smaller than the 
+          max, ....then that is the max number.
+
+Code:
+ static Pair getMinMax(long a[], long n)  
+    {
+        long min=a[0];
+        long max=a[0];
+        for(int i=0; i<a.length; i++){
+            if(a[i]<min)
+            min=a[i];
+            if(a[i]>max)
+            max=a[i];
+        }
+        Pair minmax = new Pair(min,max);
+        return minmax;
+    }

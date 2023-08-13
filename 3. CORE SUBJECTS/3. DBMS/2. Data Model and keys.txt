@@ -51,7 +51,7 @@
 		
 
 #### E-R data Model ####
-	- stands for Entity relation ship model
+	- stands for Entity relationship model
 	- it is used for conceptual design of database.
 	- objects are reprsented as entity and relationship among objects are portyaed using diagrams.
 	- components:
