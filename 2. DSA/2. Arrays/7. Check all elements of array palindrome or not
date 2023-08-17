@@ -1,2 +1,26 @@
 Q Check all elements are palindrom or not
 https://practice.geeksforgeeks.org/problems/palindromic-array-1587115620/1?page=3&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Arrays&sortBy=submissions
+
+Approach: If all the elements in array are palindrom then array is also palindrom. 
+          So, check the first element is palindrom or not. If the reverse of the first element matches with the actual 
+          element then only it is palindrom. 
+          In this way, check all the elements.
+
+Code:
+public static int palinArray(int[] a, int n)
+           {
+                  for(int i=0; i<n; i++){
+                      int c,b,sum=0, num=0;
+                      c=b=a[i];
+                      while(c!=0){
+                          num=c%10;
+                          sum=sum*10+num;
+                          c=c/10;
+                      }
+                      if(b!=sum)
+                      return 0;
+                  }
+                  return 1;
+                  
+                  
+           }

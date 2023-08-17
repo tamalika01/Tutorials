@@ -1,7 +1,49 @@
-QFind Second largest element in array
+Q. Find Second largest element in array
 https://practice.geeksforgeeks.org/problems/second-largest3735/1
 
+Approach: If we sort an array then the secondLast element will be the secondLargest element. So we have to check from the last 
+          element. If the last element is equal to the secondLast element then it is false, otherwise the secondLast element
+          becomes the secondLargest.
+
+Code:
+int print2largest(int arr[], int n) {
+        Arrays.sort(arr);
+        for(int i=arr.length-2; i>=0; i--){
+            if(arr[i]!=arr[arr.length-1]){
+                return arr[i];
+            }
+        }
+        return -1;
+    }
 
 
-QFind Second smallest element
-https://practice.geeksforgeeks.org/problems/5c2734730cb1e98e3877a0b91f7d680d0efc8acf/1
+
+
+Q. Find Smallest and Second smallest element in array
+https://practice.geeksforgeeks.org/problems/find-the-smallest-and-second-smallest-element-in-an-array3226/1
+
+Approach: At first we sort the array. The first element will be the smallest, second element will be the secondSmallest, if there is
+          no repeation of elements in array.
+          If there is repeation in elements, then start to check from the second element. if the second element is equal to the first
+          element ie. the smallest element, then go to next index and further check it with the first element.
+          Continue the checking ...when the element will be not equal to the first element, that is the secondSmallest. 
+
+Code:
+ public long[] minAnd2ndMin(long a[], long n)  
+    {
+        Arrays.sort(a);
+        long smallest=a[0];
+        long secondSmallest=-1;
+        for(int i=1; i<a.length; i++){
+            if(a[i]!=smallest){
+            secondSmallest = a[i];
+            break;
+            }
+        }
+        if(secondSmallest==-1)
+        smallest=-1;
+        long[] ans = {smallest, secondSmallest};
+        return ans;
+         
+     }
+

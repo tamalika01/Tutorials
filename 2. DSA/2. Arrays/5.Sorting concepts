@@ -1,6 +1,74 @@
-Q Check if array is sorted or not
+Q. Check if array is sorted or not
 https://practice.geeksforgeeks.org/problems/check-if-an-array-is-sorted0701/1?page=2&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Arrays&sortBy=submissions
 
+Approach 1: We have to check that the array is sorted or not, means array is in ascending order or not.
+          So, atfirst we sort the given array by sorting method of Array, then we check that if, the new sorted array matches 
+          exactly with the given array then it is true, otherwise false.
 
-Q Sort array of 0's, 1's, 2's
+Code 1:
+ boolean arraySortedOrNot(int[] arr, int n) {
+        int[] sortedArray = new int[n];
+        for(int i=0; i<arr.length; i++){
+            sortedArray[i]=arr[i];
+        }
+          Arrays.sort(arr);
+         if(Arrays.equals(sortedArray,arr))
+         return true;
+         else
+         return false;
+    }
+
+Approach 2:  we started checking from the second element of the array, if the second element is smaller than the previous 
+             element then it will be false, because smallest element should remain in first always then only we can say that 
+             ascending order is done.
+
+Code2:
+boolean arraySortedOrNot(int[] arr, int n) {
+        for(int i=1; i<n; i++){
+            if(arr[i]<arr[i-1])
+            return false;
+        }
+        return true;
+    }
+
+
+
+Q. Sort array of 0's, 1's, 2's
 https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1?page=1&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Arrays&sortBy=submissions
+
+Approach 2: Atfirst we have to count the number of zero, one and two. Then we have to print that numbers of 0,1,2 in an array.
+            So, atfirst we print the zero then one and then two.
+
+Code 1:
+public static void sort012(int a[], int n)
+    {
+        Arrays.sort(a);
+    }
+
+Code 2:
+public static void sort012(int a[], int n)
+    {
+        int zero=0, one=0, two=0, index=0;
+        for(int i=0; i<n;i++){
+            if(a[i]==0)
+            zero++;
+            else if(a[i]==1)
+            one++;
+            else
+            two++;
+        }
+        for(int i=0; i<zero; i++){
+            a[index]=0;
+            index++;
+        }
+        for(int i=0; i<one; i++){
+            a[index]=1;
+            index++;
+        }
+         for(int i=0; i<two; i++){
+            a[index]=2;
+            index++;
+        }
+    }  
+        
+        

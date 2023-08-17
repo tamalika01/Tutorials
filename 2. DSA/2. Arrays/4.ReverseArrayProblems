@@ -1,5 +1,23 @@
-QFind Perfect array
+Q. Find Perfect array
 https://practice.geeksforgeeks.org/problems/perfect-arrays4645/1
+
+Approach: An array is said to be perfect if its reverse array matches the original array. We have to check it.
+          So visit every element of the array and check the first element to last element, then check the second element
+          to secondLast element. like this we have to keep checking. if all the elements matches then it is perfect.
+
+Code:
+public boolean IsPerfect(int a[], int n)
+    {
+        for(int i=0; i<n; i++){
+            if(a[i] != a[n-i-1]){
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+
 
 
 
