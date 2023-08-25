@@ -58,4 +58,14 @@
 
         // sort the entire list 
         list.sort();
+
+        // traverse the arraylist , using typical for-i loop 
+        for(int i=0;i=n;i<list.size()){
+            int ele = list.get(i);
+        }
+
+        // traverse using enhanced for loop 
+        for(int ele: arr){
+            
+        }
     ```
