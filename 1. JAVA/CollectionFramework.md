@@ -69,3 +69,49 @@
             
         }
     ```
+## Map
+- It is an interface in java collection framework.
+- Classes which implement this interface are HashMap, LinkedHashMap, TreeMap.
+
+### 5.a HashMap
+- It is a class which implements Map interface.
+- It contains the data in key-value pair. {key1:val1, key2:val2, ...} 
+- Keys can not be duplicates.
+- Constructors:
+    ```java 
+    // Default constructor 
+    HashMap<K,V> map = new HashMap<>();
+
+    // Create HashMap with initial capacity
+    HashMap<K,V> map = new HashMap<>();
+
+    // Create HashMap which contains data of a another HashMap
+    HashMap<K,V> map = new HashMap<>(anotherHashMap);
+    ```
+- Methods:
+    ```java 
+    // get value from key, returns null if key not present.
+    V value = map.get(key);
+
+    // returns the value if key is present else return the default value spcefied.
+    V value = map.getOrDefault(key, defaultValue);
+
+    // check if key is present or not 
+    boolean status = map.containsKey(key);
+
+    // remove an entry if keys is present else return null.
+    V value = map.remove(key);
+
+    // size of map 
+    int size = map.size();
+
+    // check if map is empty 
+    boolean isEmtpty = map.isEmtpty();
+
+    // traverse map using keyset
+    for(K key: map.keySet()){
+        V value = map.get(key);
+
+        // Now do whatever you want to do, you have key:value both
+    }
+    ```
