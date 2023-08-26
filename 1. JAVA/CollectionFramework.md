@@ -20,7 +20,7 @@
 
 2. null values can be inserted.
 
-2. Constructors
+3. Constructors
     ```java 
         // Constructs an empty list with an initial capacity of ten(default).
         ArrayList<T> list = new ArrayList();
@@ -29,8 +29,8 @@
         ArrayList<T> list = new ArrayList(Collection<T> collection);
     ```
 
-3. Methods to work with 
-    ```java 
+4. Methods to work with 
+   ```java 
         // Read element at index i 
         T element = list.get(i);
 
@@ -44,14 +44,14 @@
         boolean status = list.add(element);
 
         // add at at index i 
-        boolean status = list.add(i, element);
+         list.add(i, element);
 
         // remove element at index i, also return the removed elements.
         T element = list.remove(i);
 
         // search for first index and last of an element, return -1 if element not found.
         int firstIndex = list.indexOf(element);
-        int lastIndex = list.indexOf(element);
+        int lastIndex = list.lastIndexOf(element);
 
         // search if it contains an element or not, not interested in index only interested in present or not. ans is true if present
         boolean ans = list.contais(ele);
