@@ -1,0 +1,19 @@
+Q. Check the string is palindrome or not.
+https://practice.geeksforgeeks.org/problems/palindrome-string0817/1
+
+Approach: We know that if the reverse of a string matches with the original string, then it becomes palindrome. 
+
+Code:
+int isPalindrome(String S) {
+
+        StringBuilder reverse = new StringBuilder();
+        for(int i=(S.length()-1); i>=0; i--)
+        {
+            reverse.append(S.charAt(i));
+        }
+        if( S.equals(reverse.toString()))
+           return 1;
+        else
+           return 0;
+        
+    }

@@ -1,0 +1,36 @@
+Q. Reverse the string.
+https://practice.geeksforgeeks.org/problems/reverse-a-string/1
+
+Approach: We have to reverse a string. So, we have to write the last letter first, then secondLast....Steps are below:
+          - write the first letter
+          - Add the second letter, before the first
+          - Add the third letter, before the second.
+
+          OR
+
+          Creating a empty StringBuilder, Then adding the last letter, then secondLast....upto 0th index.
+          Then convert the reverse into the string. 
+
+Code:
+ public static String reverseWord(String str)
+    {
+        String reverse = "";
+        
+        for(int i=0; i<str.length(); i++)
+        {
+            char ch = str.charAt(i);
+            reverse = ch + reverse;
+        }
+        return reverse;
+    }
+
+    OR
+public static String reverseWord(String str)
+    {
+       StringBuilder reverse = new StringBuilder();
+        for(int i=(str.length()-1); i>=0; i--)
+        {
+            reverse.append(str.charAt(i));
+        }
+        return reverse.toString();
+    }

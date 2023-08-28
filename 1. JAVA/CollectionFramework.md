@@ -19,6 +19,7 @@
 1. ArrayList provides us similar functionalities as of arrays, but it provides an advantage over arrays that is dynamic in nature, means in array, we are not able to add extra items once array is created, But in ArrayList we can add as many items as we want. So, it's size is not fixed.
 
 2. null values can be inserted.
+3. keys are unordered in map. Java doesnot gurantee any order.
 
 3. Constructors
     ```java 
@@ -54,7 +55,7 @@
         int lastIndex = list.lastIndexOf(element);
 
         // search if it contains an element or not, not interested in index only interested in present or not. ans is true if present
-        boolean ans = list.contais(ele);
+        boolean ans = list.contains(ele);
 
         // sort the entire list 
         list.sort();
@@ -90,6 +91,9 @@
     ```
 - Methods:
     ```java 
+    // add 
+    map.put(kay,value);
+
     // get value from key, returns null if key not present.
     V value = map.get(key);
 
@@ -115,3 +119,4 @@
         // Now do whatever you want to do, you have key:value both
     }
     ```
+    

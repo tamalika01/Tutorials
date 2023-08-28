@@ -1,0 +1,17 @@
+Q. Pattern of Strings.
+https://practice.geeksforgeeks.org/problems/pattern-of-strings3829/1?page=1&difficulty[]=-2&category[]=Strings&sortBy=submissions
+
+Approach: We are printing the same string first. Then we are removing the last letter or we can say 
+          we are printing upto the secondLast letter. Then upto the thirdLast letter. 
+          
+
+Code:
+ArrayList<String> pattern(String S) {
+        
+        ArrayList<String> list = new ArrayList<>();
+        for(int i=S.length(); i>0; i--)
+        {
+            list.add(S.substring(0,i));
+        }
+        return list;
+    }

@@ -1,6 +1,7 @@
 ### String Builder ###
 
 -- Strings in Java are immutable ie. it cannot be changed.
+-- We have to return the StringBuilder in string.
 
 1. Declaration--
      StringBuilder sb = new StringBuilder("Apna College");

@@ -1,0 +1,36 @@
+Q. Find the maximum occuring character.
+https://practice.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1?page=1&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Strings&sortBy=submissions
+
+Approach:
+
+Code:
+ public static char getMaxOccuringChar(String line)
+    {
+        // Your code here
+        HashMap<Character,Integer> map = new HashMap<>();
+		for(int i=0; i<line.length(); i++)
+		{
+			Character ch = line.charAt(i);
+			if(map.containsKey(ch))
+			{
+				Integer count = map.get(ch);
+				map.put(ch, count+1);
+			}
+			else 
+			{
+				map.put(ch,1);
+			}
+		}
+		Character ans = null;
+		for(Character key:map.keySet()) {
+			if(ans==null )
+				ans = key;
+			else if( map.get(key) > map.get(ans)) 
+				ans = key;
+			else if((map.get(key)== map.get(ans) )&& (key<ans))
+				ans = key;
+			}
+		    return ans;
+    
+        
+    }

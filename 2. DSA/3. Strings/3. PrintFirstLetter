@@ -1,0 +1,18 @@
+Q. Print the first letter of every word
+https://practice.geeksforgeeks.org/problems/print-first-letter-of-every-word-in-the-string3632/1?page=2&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Strings&sortBy=submissions
+
+Approach: At first we will print the first letter, then we will check that, when space comes, we will print the next letter.
+
+Code:
+String firstAlphabet(String S) {
+
+        String str = "" +S.charAt(0);
+        StringBuilder word = new StringBuilder(str);
+        for(int i=0; i<S.length()-1; i++)
+        {
+            if(S.charAt(i)==' ')
+               word.append(S.charAt(i+1));
+        }
+        return word.toString();
+        
+    }
