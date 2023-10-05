@@ -40,7 +40,7 @@
        -- let: declare a block Variable // cannot redeclared
        -- const: declare a block constant // cannot redeclared
 
-13. js sysntax defines two types of values.
+13. js syntax defines two types of values.
              -- fixed values are called literals.
              -- variable values are called variables.
 
