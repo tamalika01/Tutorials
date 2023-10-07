@@ -1,0 +1,61 @@
+# DOM 
+- When a web page is loaded, the browser creates a Document Object Model of the page.
+- The HTML DOM model is constructed as a tree of Objects (means every html tag is converted into js object)
+- document is an object which represent whole page and contains methods and properties to works for dom.
+
+# How to get html tag ele as js object 
+1. Get by html id attribute
+    - const ele = document.getElementById("htmlId"); 
+    - return the html tag whoose id matches with given id as js object.
+    - Use this when there is need to get only one html element.
+
+2. Get by css class attribute
+    - const elements = document.getElementsByClass("className");
+    - return all html ele who have class="className" in a list.
+    - Use this when you have requirement to work multiple html elements 
+
+
+# working with js object
+- Once you get html element as js object. Returned js object contains many properties and methods which you can change values to affect 
+      html appeareance, looing, almsot everything you can do as you can write code in html directly.
+
+- Always first you have to get html ele as js object by running abov two methods. 
+
+
+# Event in js 
+- Event is an user action. So any thing user does on our web page (html file), they generate an event. 
+- Some example of event are:
+        user click a button or a link : click event
+        user submit form using submit button : submit event
+        user place mouse on any ele: mousehover event
+        and many many more events...
+
+- When any event occurs browser do a action, i.e for event browser knows what to do.
+- If we want that some extra things should also be done on any event other than defualt which browser do, then we need to handle that event.
+
+- Handling event requires 3 things to understand:
+    -  ele : which is html ele on event occured. e.g if we are talking click event, then which button or link is going to clicked.
+    -  type of event: once we know of this is an ele on where evenet is going to occured, now what type of event we are talking on that ele. for e.g :
+            we decided that a particular button is element where we will attach event but many event will occur on that button like mousehover 
+            click etc. Which type of event we want to capture, we need to decide. 
+    -  function: it is normal js function. Now inside this function we write code which we want that this thing should happend when an event on a 
+            particular element happens. like we want when one particular button is clicked then it's color should be changed to green. Now
+            code of changing button color to green should be placed inside function. In short, this function will be executed each time when 
+            event will occur.
+
+    - Once you have those three things, one js object say obj, one event type (say eventType) and one function say funcName, register the
+      event is using any one of ways:
+        1. obj.eventName = funcName; or 
+        2. obj.addEventListener("eventName", funcName); // use this method mostly rather than 1st point way.
+
+
+# change html content using dom 
+- later free time explore
+
+# change css and appeareance using dom 
+- later free time explore
+
+# get and set form data using dom 
+- later free time explore
+
+

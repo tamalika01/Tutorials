@@ -1,0 +1,106 @@
+# JAVASCRIPT 
+
+1. Js is written in `<script>` tag.
+2. A js function is a block of code, that can be executed when called for.
+3. A function can be called when a event occurs, like when we click a button.
+4. A js function can be placed in both head section or body section.
+5. we can create a file with .js extension and link it to html page.
+    like myScript.js is the file name
+       in html page will be `<script src = "myscript.js" ></sricpt>`
+
+      `// output //` 
+6. JavaScript can "display" data in different ways:
+     - Writing into an HTML element, using innerHTML.
+     - Writing into the HTML output using document.write().
+     - Writing into an alert box, using window.alert().
+     - Writing into the browser console, using console.log().
+
+7. Using innerHTML:
+     -  To acess the html element, js can use the document.getElementsById(id) method.
+     -  `<p id="sum"> The sum is: </p> <script> document.getElementsById("sum").innerHTML = 5+6; </script> `
+
+8. For testing purposes, it is convinent to use document.write() method.
+     -  document.write(5+6); // in script tag, not required id
+
+9. window is global object, we can also skip it.
+     - window.alert(5+6); or alert(5+6);  // in script tag
+
+10. For debugging, we can use console.log  
+    -  console.log(5+6); // in script tag
+
+     // Statements //
+11. Js statements consists of values, expression, operators, keywords and comments.
+    - `document.getElementsById("name").innerHTML = "hello tamalika";` 
+12. Variables:
+    - let a, b,c;
+    - a=3; b=4; c=5; //can be assigned values in same line by using semicolon
+
+    - var: declare a Variable   // can be redeclared
+    - let: declare a block Variable // cannot redeclared
+    - const: declare a block constant // cannot redeclared
+
+13. js syntax defines two types of values.
+    - fixed values are called literals.
+    - variable values are called variables.
+
+14. js uses arithmetic operators to compute values.
+    - they are +, -, /, *
+
+15. js uses assignment operators to assign values to variables.
+    - it is =
+
+16. js type operators:
+    - typeof: returns the type of a variable
+    - instanceof: returns true if an object is an instance of object type.
+
+17. JavaScript has 8 Datatypes
+    - String    
+    - Number    
+    -  Bigint    
+    -  Boolean
+    - Undefined       
+    -  Null      
+    - Symbol     
+    - Object
+
+18. The Object Datatype
+    - The object data type can contain
+          - An object    
+          - An array     
+          - A date
+
+19. Javascript numbers are always one type: double (64-bit floating point).
+
+20. javaScript objects are written with curly braces {}.
+    - Object properties are written as name:value pairs, separated by commas.
+    - `const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};` 
+    - // accessing objects
+    -  objectname.propertyname; like car.color; 
+
+21. A JavaScript function is a block of code designed to perform a particular task.
+    - A JavaScript function is executed when "something" invokes it (calls it).
+    - A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+    - ` function name(parameter1, parameter2,...){ //write the code here }`
+
+22.  What is this?
+    - In JavaScript, the this keyword refers to an object.
+    - Which object depends on how this is being invoked (used or called).
+    - The this keyword refers to different objects depending on how it is used:
+    - this.color means color is the property of the object.
+
+23. // accesing object methods
+    - `objectname.methodName();` 
+    -  eg: person.walks();
+
+24. // events
+   - Here are some examples of HTML events:
+   - An HTML web page has finished loading
+   - An HTML input field was changed
+   - An HTML button was clicked
+
+25. // onclick
+    - `<element event = some javaScript>` 
+    - eg: `<button onlick = document.getElementsById("demo").innerHTML = Date()> The date is? </button>`
+
+    or  `<button onclick=displayDate()>The date is?</button>`
+    -  here displayDate is the function
