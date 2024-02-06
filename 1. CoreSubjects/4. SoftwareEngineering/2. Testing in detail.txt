@@ -42,3 +42,5 @@
 8. What is Acceptance Testing(user acceptance testing)?
 --- conducted to determine whetherthe system is ready for release.
     During this final phase, the user will test the system to find out whether the application meets their business needs.  
+
+9. 
