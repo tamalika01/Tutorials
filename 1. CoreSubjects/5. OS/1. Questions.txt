@@ -1,4 +1,4 @@
-1.  What is Operating System?
+\1.  What is Operating System?
 Ans-- An Operating System is a software that manages computer hardware, software resources and provides common services for computer program.
       It acts as intermediary between computer program and hardware on ehich these programs will run.
       ex: Winndows, Linux, Android, Mac
